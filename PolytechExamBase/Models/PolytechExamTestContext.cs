@@ -33,7 +33,7 @@ namespace PolytechExamBase.Models
             if (!optionsBuilder.IsConfigured)
             {
                 //To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=ANDRII-DESKTOP-;Database=PolytechExamTest;User Id=test;Password=1234512345;Trusted_Connection=True;MultipleActiveResultSets=true");
+                optionsBuilder.UseSqlServer("Server=tcp:polytechexambase.database.windows.net,1433;Initial Catalog=PolytechExamBase;Persist Security Info=False;User ID=dbo.admin;Password=Henry656;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             }
         }
 
